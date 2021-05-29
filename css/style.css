@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif !important;
+    background: var(--main-background-color);
+}
+
+:root{
+    --main-background-color : rgb(244,244,238);
+    --heading-bold-color : rgb(33,37,41);
+    --nav-links-color : rgb(215,173,136);
+    --green-color : rgb(39, 184, 51);
+    --blue-color : rgb(33, 131, 177);
+}
+
+
+/* Navbar Css */
+nav{
+    margin-top: 30px;
+}
+
+nav .logo-img{
+    height: 50px;
+    width: 80px;
+}
+
+nav .nav-logo-holder{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a{
+    font-weight: bold;
+    color: black !important;
+    padding: 0px 20px !important;
+}
+
+nav a:hover{
+    color: var(--nav-links-color) !important;
+}
+
+nav .active-nav-link{
+    color: var(--nav-links-color) !important;
+}
+
+@media only screen and (max-width:768px){
+    .navbar-toggler{
+        outline: none !important;
+        border: none;
+    }
+    nav a{
+        padding:20px !important;
+        text-align: center;
+    }
+    nav li{
+        border-bottom: 2px solid var(--nav-links-color);
+    }
+    nav li:hover{
+        background: var(--heading-bold-color);
+    }
+    nav li:hover a{
+        transform: scale(1.15);
+    }
+}
+
+
+
+/* Section-1 design */
+.section-1 .row .section-1-col-1,.section-1-col-2,.section-1-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.section-1-col-1{
+    flex-direction: column;
+}
+
+.section-1-col-1 h1{
+    font-weight: bolder;
+    color: var(--heading-bold-color);
+    font-size: 100px;
+}
+
+.section-1 .section-1-btn{
+    padding: 20px 0px;
+}
+
+.section-1 .section-1-btn a{
+    text-decoration: none;
+    background: var(--heading-bold-color);
+    color: var(--main-background-color);
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: all 0.6s ease;
+}
+
+.section-1 .section-1-btn a:hover{
+    background: var(--nav-links-color);
+    transform: scale(1.15);
+}
+
+.section-1 .section-1-box-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
+@media only screen and (max-width:992px){
+    .section-1-col-1 h1{
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .section-1-col-1{
+        padding: 40px 0px;
+    }
+
+    .section-1 .section-1-box-1{
+        text-align: justify;
+        letter-spacing: 0.1px;
+    }
+}
+
+@media only screen and (max-width:576px){
+    .section-1 .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .section-1-box-1 p{
+        padding: 0px 10px;
+    }
+}
+
+
+/* Section-2 */
+.section-2{
+    min-height: 100vh;
+    padding: 40px 0px;
+}
+.section-2,.section-2 .row .col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-2 .Section-content{
+    flex-direction: column;
+}
+
+.section-2 .Section-content p{
+    text-align: center;
+    font-weight: 500;
+}
+
+.section-2 .Section-content a{
+    text-decoration: none;
+    background: var(--heading-bold-color);
+    color: var(--main-background-color);
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: all 0.6s ease;
+}
+.section-2 .Section-content h2{
+    font-weight: 600;
+    text-align: center;
+}
+
+.section-2 .Section-content a:hover{
+    background: var(--green-color);
+}
+
+.advanced-section .Section-content a:hover{
+    background: var(--blue-color);
+}
+
+@media only screen and (max-width:768px) {
+    .section-2 .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .advanced-section .row{
+        flex-direction: column-reverse;
+    }
+
+    .section-2 .Section-Img img{
+        padding: 20px 0px;
+    }
+
+    .section-2 .Section-Img img{    
+        height: 75%;
+        width: 75%;
+    }
+
+    .advanced-section .Section-Img img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .section-2 .Section-content p{
+        text-align: justify;
+        padding: 0px 10px;
+    }
+}
