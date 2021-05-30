@@ -8,6 +8,7 @@
 body{
     font-family: 'Quicksand', sans-serif !important;
     background: var(--main-background-color);
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -16,6 +17,10 @@ body{
     --nav-links-color : rgb(215,173,136);
     --green-color : rgb(39, 184, 51);
     --blue-color : rgb(33, 131, 177);
+    --enquire-background : rgb(10,48,108);
+    --enquire-backgroun-2 : rgb(18,41,77);
+    --enquire-text-heading : rgb(232,188,90); 
+    --footer-curve-background : rgb(15,35,66);
 }
 
 
@@ -221,4 +226,242 @@ nav .active-nav-link{
         text-align: justify;
         padding: 0px 10px;
     }
+}
+
+/* Enquire Section */
+.Enquire{
+    background: var(--enquire-background);
+    /* background: var(--enquire-backgroun-2); */
+    color: white;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Enquire .tittle{
+    color: var(--enquire-text-heading);
+    font-weight: 700;
+    font-size: 50px;
+}
+.Enquire .UpperHeading{
+    text-align: center;
+    padding: 20px 0px;
+}
+.Enquire .UpperHeading p{
+    font-weight: 500;
+}
+.Enquire .tittle span{
+    color: white;
+}
+
+.Enquire .user__Data,.Enquire .user__form{
+    padding: 20px 0px;
+}
+
+.Enquire .user__Data .user__data--item{
+    display: flex;
+    align-items: center;
+}
+
+.Enquire .user__Data .user__data--item .user__data__item--icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.Enquire .user__form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Enquire form{
+    width: 100%;
+}
+
+.Enquire .user__form .form__item{
+    margin-bottom: 12px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Enquire .user__form  h1{
+    font-weight: 700;
+    color: var(--enquire-text-heading);
+    margin-bottom: 20px;
+}
+
+.Enquire .user__form  h1 span{
+    color: white;
+}
+
+.Enquire .user__form .form__item input{
+    background: var(--main-background-color);
+    outline: none;
+    border: none;
+    padding: 7px;
+    width: 80%;
+    border-radius: 6px;
+}
+
+.Enquire .user__form .form__item input::placeholder{
+    font-weight: 700;
+}
+
+.Enquire .user__form .advance__message--item textarea{
+    background: var(--main-background-color);
+    outline: none;
+    border: none;
+    padding: 7px;
+    width: 80%;
+    font-weight: 700;
+    border-radius: 6px;
+    height: 100px;
+}
+
+.Enquire .uniqueBtn{
+    margin-top: 20px;
+}
+
+.Enquire .uniqueBtn button{
+    position: relative;
+    font-size: 20px;
+    background: #0c002b;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    color: #1670f0;
+    font-weight: 700;
+    padding: 5px 10px;
+    box-shadow: 0 20px 50px rgba(0,0,0,.5);
+    overflow: hidden;
+}
+
+.Enquire .uniqueBtn button::before{
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    width: 50%;
+    background: rgba(0,0,0,0.15);
+}
+
+.Enquire .uniqueBtn button span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #0c002b, #1779ff);
+    animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+
+.Enquire .uniqueBtn button span:nth-child(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, #0c002b, #1779ff);
+    animation:  animate2 2s linear infinite;
+    animation-delay: 1.5s;
+}
+
+
+@keyframes animate2{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+}
+
+.Enquire .uniqueBtn button span:nth-child(3){
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to left, #0c002b, #1779ff);
+    animation:  animate3 2s linear infinite;
+    animation-delay: 0.5s;
+}
+
+
+@keyframes animate3{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.Enquire .uniqueBtn button span:nth-child(4){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to top, #0c002b, #1779ff);
+    animation:  animate4 2s linear infinite ;
+    animation-delay: 1s;
+}
+
+
+@keyframes animate4{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}
+
+
+@media only screen and (max-width:768px){
+    .Enquire .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+
+
+
+/* Footer Design */
+footer{
+    height: 40px;
+    background: var(--footer-curve-background);
+}
+
+footer p{
+    line-height: 40px;
+    text-align: center;
+    color: var(--main-background-color);
+}
+
+footer p span{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--enquire-text-heading);
 }
