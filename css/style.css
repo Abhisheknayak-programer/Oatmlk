@@ -422,7 +422,7 @@ nav .active-nav-link{
     height: 100%;
     background: linear-gradient(to top, #0c002b, #1779ff);
     animation:  animate4 2s linear infinite ;
-    animation-delay: 1s;
+    animation-delay: 1.5s;
 }
 
 
@@ -464,4 +464,130 @@ footer p span{
     text-transform: uppercase;
     font-weight: 700;
     color: var(--enquire-text-heading);
+}
+
+/* Media of All the above Major classes */
+@media only screen and (max-width:992px){
+    .section-2{
+        min-height: 10vh;
+    }
+    .Enquire{
+        min-height: 10vh;
+    }
+}
+
+
+
+
+/* About Page Design */
+/* About Section -> 1 */
+.advanced__section-1-col-2{
+    flex-direction: column;
+}
+.advanced__section-1-col-2 p{
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    text-align: center;
+}
+
+@media only screen and (max-width:756px){
+    .advanced__section-1-col-2 p{
+        text-align: justify;
+    }
+}
+
+/* About Section ->2 */
+.About__section--2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.About__section--2 .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.About__section--2 .row p{
+    text-align: justify;
+}
+
+@media only screen and (max-width:992px){
+    .About__section--2{
+        min-height: 10vh;
+        padding: 50px 0px;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .DOhidden{
+        display: none;
+    }
+    .About__section--2 .row{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .About__section--2 .row .col{
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width:567px){
+    .About__section--2{
+        padding: 0px 0px;
+    }
+}
+
+
+
+/* Founder Section */
+.Founder__section{
+    padding: 20px 0px;
+}
+
+.Founder__section h1{
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.Founder__section .row .col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.Founder__section .row .Founder_img__holder{
+    overflow: hidden;
+}
+
+.Founder__section .Founder_img__holder img{
+    transition: all 2s ease;
+}
+
+.Founder__section .Founder_img__holder img:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+.Founder__section .row .col p{
+    text-align: justify;
+    padding: 0px 10px;
+}
+
+
+@media only screen and (max-width:768px){
+    .Founder__section .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .Founder__section .row .Founder_img__holder img{
+        padding: 10px;
+        margin-bottom: 20px;
+    }
 }
