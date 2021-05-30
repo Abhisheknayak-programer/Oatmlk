@@ -21,6 +21,8 @@ body{
     --enquire-backgroun-2 : rgb(18,41,77);
     --enquire-text-heading : rgb(232,188,90); 
     --footer-curve-background : rgb(15,35,66);
+    --environment-background : rgb(234,242,237);
+    --environment-heading : rgb(0,62,48);
 }
 
 
@@ -589,5 +591,51 @@ footer p span{
     .Founder__section .row .Founder_img__holder img{
         padding: 10px;
         margin-bottom: 20px;
+    }
+}
+
+
+
+/* Business Page */
+.Business_section__1{
+    min-height: 60vh;
+}
+
+.Business_section__1 .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.Business_section__1 .row h1{
+    font-weight:  bolder;
+    text-align: center;
+    font-size: 90px;
+}
+
+@media only screen and (max-width:992px){
+    .Business_section__1 {
+        min-height: 10vh;
+        padding: 40px 0px;
+    }
+    .Business_section__1 .row {
+        min-height: 10vh;
+    }
+    .Business_section__1 .row h1{
+        font-size: 50px;
+    }
+}
+
+
+/* Second Section */
+.ice-cream-IMg{
+    height: 90%;
+    width: 50%;
+}
+
+@media only screen and (max-width:568px){
+    .ice-cream-IMg{
+        height: 500px !important;
     }
 }
