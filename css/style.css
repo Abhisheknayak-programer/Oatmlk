@@ -21,7 +21,6 @@ body{
     --enquire-backgroun-2 : rgb(18,41,77);
     --enquire-text-heading : rgb(232,188,90); 
     --footer-curve-background : rgb(15,35,66);
-    --environment-background : rgb(234,242,237);
     --environment-heading : rgb(0,62,48);
 }
 
@@ -638,4 +637,281 @@ footer p span{
     .ice-cream-IMg{
         height: 500px !important;
     }
+}
+
+
+
+
+/* Environment Design */
+.environment__Section__1{
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.environment__Section__1 h1{
+    text-align: center;
+    color: var(--environment-heading);
+    font-weight: bolder;
+    font-size: 90px;
+}
+
+@media only screen and (max-width:992px) {
+    .environment__Section__1{
+        min-height: 20vh;
+        padding: 50px 0px;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .environment__Section__1 h1{
+        font-size: 50px;
+    }
+}
+
+
+/* Environment Section -> 2 */
+.environment__Section__2{
+    padding: 40px 0px;
+    color: var(--environment-heading) !important;
+}
+.environment__Section__2 .environment__Section__2__col__1,.environment__Section__2 .environment__Section__2__col__2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.environment__Section__2 h2{
+    font-weight: 700;
+}
+
+.environment__Section__2 p{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    letter-spacing: 0.15px;
+    font-weight: 500;
+}
+
+@media only screen and (max-width:992px){
+    .environment__Section__2  p{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .environment__Section__2 .row{
+        flex-direction: column-reverse;
+    }
+    .environment__Section__2 .row .col{
+        margin-bottom: 20px;
+    }
+    .environment__Section__2  p{
+        width: 90%;
+        text-align: justify;
+    }
+}
+
+
+/* Advanced Enviormnent Section */
+@media only screen and (max-width:768px){
+    .Advanced__Environment__section__2 .row{
+        flex-direction: column;
+    }
+}
+
+
+
+/* Environment Section -> 6 */
+.Environment__section__6{
+    padding: 50px 0px;
+    text-align: center;
+    color: var(--environment-heading);
+}
+
+.Environment__section__6 strong{
+    color: var(--environment-heading);
+}
+
+.Environment__section__6 p{
+    letter-spacing: 0.15px;
+    font-weight: 500;
+}
+
+.Environment__section__6 h2{
+    font-weight: 700;
+}
+
+.Environment__section__6 a{
+    text-decoration: none;
+    border: 2px solid var(--environment-heading);
+    padding: 10px 15px;
+    border-radius: 30px;
+    color: var(--environment-heading);
+    font-weight: bold;
+    transition: all 0.4s ease;
+}
+
+.Environment__section__6 a:hover{
+    color: white;
+    background: var(--environment-heading);
+    border-radius: 0px;
+}
+
+@media only screen and (max-width:576px){
+    .Environment__section__6{
+        padding: 20px 0px;
+    }
+}
+
+/* Environment Section -> 7 */
+.myHeading{
+    font-weight: bold;
+    font-size: 60px;
+}
+
+@media only screen and (max-width:768px){
+    .myHeading{
+        font-size: 40px;
+    }
+}
+
+
+@media only screen and (max-width:576px){
+    .myHeading{
+        font-size: 30px;
+    }
+}
+
+
+
+/* Process design */
+.Process__section__1{
+    text-align: center;
+    padding: 50px 0px;
+}
+.Process__section__1 p{
+    font-weight: 500;
+}
+.Process__section__1 h1{
+    font-weight: bold;
+}
+
+/* Process Section -> 2  */
+
+@media only screen and (min-width: 800px){
+    .Enabled__Row{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .Disabling__Row{
+        display: none;
+    }
+    .Enabled__Row{
+        display: block;
+    }
+
+    .Enabled__Row .row .col{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px 5px;
+    }
+    
+    .Enabled__Row .row .col p{
+        text-align: center;
+    }
+
+    .Enabled__Row .row .col h2{
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .Enabled__Row .row .col{
+        padding: 20px 10px;
+    }
+
+    .Enabled__Row .row .col p{
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width:576px){
+    .Enabled__Row .row{
+        flex-direction: column;
+    }
+    .Enabled__Row .row .col{
+        margin-bottom: 20px;
+        padding: 5px 20px;
+    }
+}
+
+
+
+/* Environment Leaf Addition */
+.environment__Section__2__col__1,.environment__Section__2__col__2,.Env__BOUNDARY{
+    position: relative;
+}
+.Leaf__1{
+    position: absolute;
+    top: 0;
+    left: 10%;
+}
+.Leaf__2{
+    position: absolute;
+    top: -30%;
+    left: 25%;
+}
+.Leaf__3{
+    position: absolute;
+    top: -30%;
+    right: 30%;
+}
+.Leaf__4{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.Leaf__5{
+    position: absolute;
+    top: 0;
+    left: 10%;
+}
+.Leaf__6{
+    position: absolute;
+    top: -30%;
+    right: 0;
+}
+
+@media only screen and (max-width:799px){
+    .Leaf__1,.Leaf__2,.Leaf__3,.Leaf__4,.Leaf__5,.Leaf__6{
+        display: none;
+    }
+}
+
+/* UpArrow Design */
+.Arrow__Holder .ArrowBtn{
+    position: fixed;
+    bottom: 2%;
+    right: 0%;
+}
+.Arrow__Holder .ArrowBtn{
+    border: none;
+    background: transparent;
+}
+
+@media only screen and (max-width:768px){
+    .Arrow__Holder{
+        display: none;
+    }
+    /* .Arrow__Holder .ArrowBtn img{
+        height: 40px;
+    } */
 }
