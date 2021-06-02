@@ -231,9 +231,9 @@ nav .active-nav-link{
 
 /* Enquire Section */
 .Enquire{
-    background: var(--enquire-background);
-    /* background: var(--enquire-backgroun-2); */
-    color: white;
+    /* background: var(--enquire-background); */
+    background: var(--enquire-text-heading);
+    /* color: white; */
     min-height: 80vh;
     display: flex;
     justify-content: center;
@@ -241,7 +241,6 @@ nav .active-nav-link{
     flex-direction: column;
 }
 .Enquire .tittle{
-    color: var(--enquire-text-heading);
     font-weight: 700;
     font-size: 50px;
 }
@@ -254,6 +253,10 @@ nav .active-nav-link{
 }
 .Enquire .tittle span{
     color: white;
+}
+
+.user__data__item__details{
+    font-weight: 600;
 }
 
 .Enquire .user__Data,.Enquire .user__form{
@@ -270,6 +273,11 @@ nav .active-nav-link{
     justify-content: center;
     align-items: center;
     padding: 30px;
+}
+
+.user__data__item--icon img{
+    height: 40px;
+    width: 40px;
 }
 
 .Enquire .user__form{
@@ -293,7 +301,6 @@ nav .active-nav-link{
 
 .Enquire .user__form  h1{
     font-weight: 700;
-    color: var(--enquire-text-heading);
     margin-bottom: 20px;
 }
 
@@ -332,18 +339,25 @@ nav .active-nav-link{
 .Enquire .uniqueBtn button{
     position: relative;
     font-size: 20px;
-    background: #0c002b;
     text-transform: uppercase;
     outline: none;
     border: none;
-    color: #1670f0;
     font-weight: 700;
     padding: 5px 10px;
+    color: white;
+    background: var(--heading-bold-color);
+    transition: all 0.5s ease;
+    /* background: #0c002b;
+    color: #1670f0;
     box-shadow: 0 20px 50px rgba(0,0,0,.5);
-    overflow: hidden;
+    overflow: hidden; */
 }
 
-.Enquire .uniqueBtn button::before{
+.Enquire .uniqueBtn button:hover{
+    background: black;
+}
+
+/* .Enquire .uniqueBtn button::before{
     content: "";
     position: absolute;
     top: 2px;
@@ -434,7 +448,7 @@ nav .active-nav-link{
     100%{
         transform: translateY(-100%);
     }
-}
+} */
 
 
 @media only screen and (max-width:768px){
@@ -452,19 +466,18 @@ nav .active-nav-link{
 /* Footer Design */
 footer{
     height: 40px;
-    background: var(--footer-curve-background);
+    background: var(--enquire-text-heading);
 }
 
 footer p{
     line-height: 40px;
     text-align: center;
-    color: var(--main-background-color);
+    font-weight: 600;
 }
 
 footer p span{
     text-transform: uppercase;
-    font-weight: 700;
-    color: var(--enquire-text-heading);
+    font-weight: 1000;
 }
 
 /* Media of All the above Major classes */
@@ -907,7 +920,7 @@ footer p span{
     background: transparent;
 }
 
-@media only screen and (max-width:768px){
+@media only screen and (min-width:1px){
     .Arrow__Holder{
         display: none;
     }
@@ -915,3 +928,130 @@ footer p span{
         height: 40px;
     } */
 }
+
+
+/* Owl Carousel Css */
+.First__Carousel{
+    padding: 40px 0px;
+    position: relative;
+}
+
+.First__Carousel h1{
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.First__Carousel .owl-nav .owl-prev span,.First__Carousel .owl-nav .owl-next span{
+    font-size: 40px !important;
+    padding: 10px;
+}
+
+.First__Carousel .owl-nav .owl-prev{
+    position: absolute;
+    top: 33%;
+    outline: none;
+    left: 0;
+    background: rgb(232,188,90)!important;
+}
+
+.First__Carousel .owl-nav .owl-next{
+    position: absolute;
+    top: 33%;
+    outline: none;
+    right: 0;
+    background: rgb(232,188,90) !important;
+}
+
+
+@media only screen and (max-width:992px){
+    .First__Carousel .owl-nav .owl-prev span,.First__Carousel .owl-nav .owl-next span{
+        padding: 10px 5px !important;
+    }
+
+    .First__Carousel .owl-nav .owl-next,.First__Carousel .owl-nav .owl-prev{
+        top: 30%;
+    }  
+}
+
+@media only screen and (max-width:576px){
+    .First__Carousel .owl-nav .owl-next,.First__Carousel .owl-nav .owl-prev{
+        top: 38%;
+    }  
+}
+
+
+
+/* FAQ EDITz */
+.FAQ__section__1 h1{
+    text-decoration: underline;
+    text-decoration-color: var(--enquire-text-heading);
+    border-bottom: 10px solid var(--enquire-text-heading);
+    display: inline-block;
+}
+
+.FAQ__section__1 .FAQ__content__box{
+    padding: 20px 0px;
+}
+
+.FAQ__content__box .Accordian__changer__btnLayer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.FAQ__content__box .Accordian__changer__btnLayer .btn__STYLE{
+    border: 2px solid var(--enquire-text-heading);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.FAQ__content__box .Accordian__changer__btnLayer .btn__STYLE:hover{
+    background: var(--enquire-text-heading);
+}
+
+
+.FAQ__content__box .Accordian__AREA .accordion{
+    padding: 20px;
+}
+
+
+
+.FAQ__content__box .Accordian__AREA .accordion button{
+    outline: none !important;
+}
+
+
+.accordion-button{
+    color: rgb(248, 183, 6);
+    font-weight: bolder;
+}
+
+
+
+@media only screen and (max-width:992px){
+    .FAQ__content__box .Accordian__changer__btnLayer{
+        flex-wrap: wrap;
+    }
+    
+    .FAQ__content__box .Accordian__changer__btnLayer .btn__STYLE{
+        margin: 10px 0px;
+    }
+}
+
+
+@media only screen and (max-width:576px){
+    .FAQ__section__1 .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .FAQ__section__1 .FAQ__content__box{
+        padding: 20px 10px;
+    }
+}
+
+
+
+/* Recipe  Design*/
